@@ -29,9 +29,9 @@ npm test
 ### Безопасность
 - Без `dangerouslySetInnerHTML` — весь контент рендерится как текст
 - Токен не в localStorage: в текущей mock-версии auth не реализована. В продакшене рекомендуется:
-  - HttpOnly cookies для access token (защита от XSS)
-  - Refresh token в secure cookie
-  - Короткий TTL access token (15–60 мин)
+- HttpOnly cookies для access token (защита от XSS)
+- Refresh token в secure cookie
+- Короткий TTL access token (15–60 мин)
 
 ### API
 - Idempotency-Key — уникальный ключ на каждый submit, передаётся в заголовке
